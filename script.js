@@ -19,15 +19,14 @@ $(document).ready(function () {
             
             // Call api and append the options
             $.ajax({
-                url: `https://joget.int.eng.cloud.tbintra.net/jw/api/list/list_grpEntMap?groupId=${groupId}&entitlementId=${filter}&startOffset=${offset}&pageSize=${pageSize}`,
+                url: `https://joget.abc.cde.efg/jw/api/list/list_grpEntMap?groupId=${groupId}&entitlementId=${filter}&startOffset=${offset}&pageSize=${pageSize}`,
                 headers: {
                     accept: 'application/json',
-                    api_id: 'API-4dcc1312-1ad4-43aa-ade8-dde257e2d5c9',
-                    api_key: 'ItsNotThatConfidential'
+                    api_id: 'API-12131-12312-1212',
+                    api_key: 'oiusdoiuasdouasd'
                 },
                 type: 'GET',
                 success: function(req) {
-                    console.log(`https://joget.int.eng.cloud.tbintra.net/jw/api/list/list_grpEntMap?groupId=${groupId}&startOffset=${offset}&pageSize=${pageSize}&entitlementId=${filter}`);
                     console.log(req);
 
                     // Build the options for the entitlement drop-down multiselect
